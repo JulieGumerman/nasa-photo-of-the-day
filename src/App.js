@@ -1,5 +1,7 @@
 import React from "react";
-import CardMaker from "./CardMaker";
+import Main from "./Main";
+import Header from "./Header";
+import Footer from "./Footer";
 
 import "./App.css";
 
@@ -7,11 +9,9 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <CardMaker />
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun!
-      </p>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
