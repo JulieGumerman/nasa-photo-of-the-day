@@ -25,11 +25,11 @@ This project was put together using create-react-app (CRA). You will not need to
 - [x] Create a forked copy of this project.
 - [x] Add your team lead as collaborator on Github.
 - [x] Clone your OWN version of the repository in your terminal
-- [ ] Download project dependencies by running one of these two commands `yarn` or `npm install`
+- [x] Download project dependencies by running one of these two commands `yarn` or `npm install`
 - [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
 - [x] Create a new branch: git checkout -b `<firstName-lastName>`.
       Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
@@ -86,8 +86,8 @@ Now is the time to build out your other components. Compose your UI, and then pa
 
 ## _MVP Requirements:_
 
-- Use the effect hook to fetch the APOD data when the component mounts.
-- Display the APOD data in different components that are composed together to build your UI.
+- [x] Use the effect hook to fetch the APOD data when the component mounts.
+- [x]Display the APOD data in different components that are composed together to build your UI.
 
 ## Pro Tips:
 
