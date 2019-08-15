@@ -1,5 +1,9 @@
 import React, { useState, useEffect} from "react";
 import axios from "axios";
+//import { Card, Image, Divider } from "semantic-ui-react";
+import { Segment, Image, Header } from "semantic-ui-react";
+import 'semantic-ui-css/semantic.min.css';
+
 
 const CardMaker = () => {
 
@@ -18,11 +22,20 @@ const CardMaker = () => {
 
     return (
 
-        <div className="card-container">
-            <h2>{dailyPhoto.title}</h2>
-            <img src={dailyPhoto.hdurl} alt="title" />
-            <p className="description">{dailyPhoto.explanation}</p>
-        </div>
+      <Segment>
+      <Image src={dailyPhoto.hdurl} size='large' floated='left' verticalAlign="middle" rounded />
+      <Header size="medium">{dailyPhoto.title}</Header>
+      <p>{dailyPhoto.explanation}
+      </p>
+     </Segment>
+        // <Card>
+        //   <Image src={dailyPhoto.hdurl} wrapped ui={false} />
+        //   <Card.Content>
+        //     <Card.Header>{dailyPhoto.title}</Card.Header>
+        //     <Divider />
+        //     <Card.Description>{dailyPhoto.explanation}</Card.Description>
+        //   </Card.Content>
+        // </Card>
         
         
         );

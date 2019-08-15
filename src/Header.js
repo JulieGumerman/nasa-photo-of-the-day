@@ -1,12 +1,20 @@
-import React from "react";
+import React from "react"; 
+import { Header, Icon, Segment } from "semantic-ui-react";
+import 'semantic-ui-css/semantic.min.css';
 
-const Header = () => {
+const FancyHeader = () => {
     return (
-        <div className="header">
-            <h1>Daily Dose of Wonder</h1>
-            <h2>NASA's Photo of the Day</h2>
-        </div>
+
+    <Segment inverted>
+    <Header as='h1' inverted color="violet">
+    <Icon name='star' />
+    <Header.Content inverted color="violet">
+        Daily Dose of Wonder
+    <Header.Subheader>Nasa's Photo of the Day</Header.Subheader>
+    </Header.Content>
+    </Header>
+    </Segment>
     )
 }
 
-export default Header;
+export default FancyHeader;

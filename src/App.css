@@ -33,18 +33,12 @@
 }
 
 /*********Component Styles *******************/
-.header {
-  background: fuchsia;
-}
 
-.main {
-  background: navy;
-}
 
-.card-container {
-  background: #61dafb;
-  width: 75%;
-  margin: 0 auto;
+
+
+.card {
+  color: red;
 }
 
 .footer {
