@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from "react";
 import axios from "axios";
 //import { Card, Image, Divider } from "semantic-ui-react";
-import { Segment, Image, Header } from "semantic-ui-react";
+import { Segment, Image, Header, Divider } from "semantic-ui-react";
 import 'semantic-ui-css/semantic.min.css';
 
 
@@ -22,11 +22,13 @@ const CardMaker = () => {
 
     return (
 
-      <Segment>
-      <Image src={dailyPhoto.hdurl} size='large' floated='left' verticalAlign="middle" rounded />
+      <Segment padded="very">
+      <Image src={dailyPhoto.hdurl} size='big' centered rounded />
       <Header size="medium">{dailyPhoto.title}</Header>
       <p>{dailyPhoto.explanation}
       </p>
+      <Divider />
+      <p>Photo credit: {dailyPhoto.copyright}</p>
      </Segment>
         // <Card>
         //   <Image src={dailyPhoto.hdurl} wrapped ui={false} />

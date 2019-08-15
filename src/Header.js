@@ -10,7 +10,7 @@ const FancyHeader = () => {
     <Icon name='star' />
     <Header.Content inverted color="violet">
         Daily Dose of Wonder
-    <Header.Subheader>Nasa's Photo of the Day</Header.Subheader>
+    <Header.Subheader>NASA's Photo of the Day</Header.Subheader>
     </Header.Content>
     </Header>
     </Segment>
