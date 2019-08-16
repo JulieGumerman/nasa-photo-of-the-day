@@ -1,16 +1,28 @@
 import React from "react";
-import { Header, Divider, Segment, Icon } from "semantic-ui-react";
-import 'semantic-ui-css/semantic.min.css';
+import styled from "styled-components";
+
+const Foot = styled.div`
+  background: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+`
+
+const ApodCredit = styled.h3`
+  color: violet;
+  text-align: center;
+`
+
+const FooterP = styled.p`
+  color: violet;
+  text-align: center;
+`
 
 const Footer = () => {
     return (
-        <Segment inverted>
-        <Header as='h4' inverted color='violet'>
-          Daily images provided by NASA's APOD API.
-          <Divider />
-          App made by fledgling software engineer Julie Gumerman, who loves stargazing.
-        </Header>
-      </Segment>
+        <Foot>
+          <ApodCredit>The API for the photos is from APOD by NASA.</ApodCredit>
+          <FooterP>App by Julie Gumerman</FooterP>
+        </Foot>
     )
 }
 

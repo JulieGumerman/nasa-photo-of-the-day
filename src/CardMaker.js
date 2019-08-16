@@ -3,7 +3,11 @@ import axios from "axios";
 //import { Card, Image, Divider } from "semantic-ui-react";
 import { Segment, Image, Header, Divider } from "semantic-ui-react";
 import 'semantic-ui-css/semantic.min.css';
+import styled from "styled-components";
 
+const PrettyP = styled.p` 
+  font-size: 18px;
+  line-height: 1.8; `
 
 const CardMaker = () => {
 
@@ -25,8 +29,8 @@ const CardMaker = () => {
       <Segment padded="very">
       <Image src={dailyPhoto.hdurl} size='big' centered rounded />
       <Header size="medium">{dailyPhoto.title}</Header>
-      <p>{dailyPhoto.explanation}
-      </p>
+      <PrettyP>{dailyPhoto.explanation}
+      </PrettyP>
       <Divider />
       <p>Photo credit: {dailyPhoto.copyright}</p>
      </Segment>
