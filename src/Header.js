@@ -1,19 +1,20 @@
 import React from "react"; 
-import { Header, Icon, Segment } from "semantic-ui-react";
-import 'semantic-ui-css/semantic.min.css';
+import styled from "styled-components";
 
+
+const HeadMaDoozle = styled.div`
+background: black;
+color: violet;
+text-align: center;
+`
 const FancyHeader = () => {
     return (
 
-    <Segment inverted>
-    <Header as='h1' inverted color="violet">
-    <Icon name='star' />
-    <Header.Content inverted color="violet">
-        Daily Dose of Wonder
-    <Header.Subheader>NASA's Photo of the Day</Header.Subheader>
-    </Header.Content>
-    </Header>
-    </Segment>
+        <HeadMaDoozle>
+            <h1>Daily Dose of Wonder</h1>
+            <h2>NASA's Photo of the Day</h2>
+
+        </HeadMaDoozle>
     )
 }
 
