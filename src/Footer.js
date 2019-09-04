@@ -10,11 +10,13 @@ const Foot = styled.div`
 const ApodCredit = styled.h3`
   color: violet;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 `
 
 const FooterP = styled.p`
   color: violet;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 `
 
 const Footer = () => {

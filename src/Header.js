@@ -6,6 +6,10 @@ const HeadMaDoozle = styled.div`
 background: black;
 color: violet;
 text-align: center;
+font-family: 'Montserrat', sans-serif;
+padding-top: 40px;
+padding-bottom: 40px;
+
 `
 const FancyHeader = () => {
     return (

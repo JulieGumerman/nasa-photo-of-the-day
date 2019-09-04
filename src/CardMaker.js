@@ -3,9 +3,21 @@ import styled from "styled-components";
 import moment from "moment";
 import axios from "axios";
 
+const ContentWrapper = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+`
 const PrettyP = styled.p` 
   font-size: 18px;
   line-height: 1.8; 
+  font-family: 'Roboto Condensed', sans-serif;
+`
+
+const PhotoCredit = styled.p`
+  font-style: italic;
+  font-family: 'Roboto Condensed', sans-serif;
 `
 
 const CardContainer = styled.div`
@@ -19,6 +31,7 @@ const CardContainer = styled.div`
   border-radius: 10px;
   margin-bottom: 10px;
   background: #edfaf1;
+  margin: 30px;
 `
 
 const CardImage = styled.img`
@@ -70,30 +83,33 @@ const CardMaker = () => {
     })
 
     return (
-      <div>
+      <ContentWrapper>
 
       <CardContainer>
         <CardImage src={dailyPhoto.hdurl} alt={dailyPhoto.title} />
+        <iframe src={dailyPhoto.url} />
         <h2>{dailyPhoto.title}</h2>
         <PrettyP>{dailyPhoto.explanation}</PrettyP>
-        <p>Photo credit: {dailyPhoto.copyright}</p>
+        <PhotoCredit>{dailyPhoto.copyright}</PhotoCredit>
       </CardContainer>
 
       <CardContainer>
         <CardImage src={dayBefore.hdurl} alt={dayBefore.title}/>
+        <iframe src={dayBefore.url} />
         <h2>{dayBefore.title}</h2>
         <PrettyP>{dayBefore.explanation}</PrettyP>
-        <p>Photo credit: {dayBefore.copyright}</p>
+        <PhotoCredit>{dayBefore.copyright}</PhotoCredit>
       </CardContainer>
 
       <CardContainer>
-        <cardImage src={dayBeforeYesterday.hdurl} alt={dayBeforeYesterday.title}/>
+        <CardImage src={dayBeforeYesterday.hdurl} alt={dayBeforeYesterday.title}/>
+        <iframe src={dayBeforeYesterday.url} />
         <h2>{dayBeforeYesterday.title}</h2>
         <PrettyP>{dayBeforeYesterday.explanation}</PrettyP>
-        <p>Photo credit: {dayBefore.copyright}</p>
+        <PhotoCredit>{dayBefore.copyright}</PhotoCredit>
       </CardContainer>
 
-      </div>
+      </ContentWrapper>
         
         );
 
